@@ -657,3 +657,143 @@ a:focus {
 }
 
 /* end footer section*/
+ 
+/* Animation section*/
+.rebote img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.rebote:hover img {
+  animation: rebote 0.5s infinite;
+}
+
+@keyframes rebote {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.about-us {
+  background-image: url(../images/image1.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-us .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  font-size: 2em;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.about-section {
+  display: flex;
+  padding: 50px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.history-column {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.mission-vision-column {
+  flex: 0 0 40%;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.mission,
+.vision {
+  margin-bottom: 20px;
+}
+
+.mission,
+.vision h3 {
+  color: #333;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 50px;
+  width: 250px;
+}
+
+
+
