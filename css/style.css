@@ -146,9 +146,18 @@ a:focus {
   display: flex;
   position: relative;
   height: calc(100vh - 90px);
-  background-image: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.primer_slider{
+  background-image: url(../images/banner1.jpg);
+}
+.segundo_slider{
+  background-image: url(../images/banner2.jpg);
+}
+.tercer_slider{
+  background-image: url(../images/banner3.jpg);
 }
 
 .slider_section .slider_box .fixed_company-detail {
@@ -315,6 +324,7 @@ a:focus {
 .service_img-container .service_img-box.i-box-4 {
   width: 60%;
   background-image: url(../images/s-4.jpg);
+  background-position: 0px -500px;
 }
 
 .service_section .service_img-container a,
